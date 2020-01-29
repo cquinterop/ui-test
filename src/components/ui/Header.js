@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Navbar,
   Container,
@@ -10,7 +11,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-const Header = () => {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -19,19 +20,19 @@ const Header = () => {
     <header>
       <Navbar color="navbar-transparent" light expand="md">
         <Container>
-          <NavbarBrand href="/">Rule of thumb.</NavbarBrand>
+          <NavbarBrand tag={Link} to="/">Rule of thumb.</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/past-trials">Past Trials
+                <NavLink tag={Link} to="/past-trials">Past Trials
               </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/how-it-works">How It Works</NavLink>
+                <NavLink tag={Link} to="/how-it-works">How It Works</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/log-in">Log In / Sign Up</NavLink>
+                <NavLink tag={Link} to="/log-in">Log In / Sign Up</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
