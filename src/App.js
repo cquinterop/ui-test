@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
+import Home from './views/Home';
 
 function App() {
   return (
     <div>
-         <Button color="danger">Danger!</Button>
+         <Home />
     </div>
   );
 }
