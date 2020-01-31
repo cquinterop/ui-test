@@ -21,7 +21,7 @@ function Closing() {
     <Progress multi className="bg-transparent rounded-0 hero__progress">
       <Progress bar value={currentDay} max={limitDay} className="text-right pr-3 pl-4 fit-content hero__progress--past position-relative">
         CLOSING IN
-    </Progress>
+      </Progress>
       <Progress bar value={remainingDays} max={limitDay} className="text-left text-dark pl-3 pr-4 d-block fit-content size-2 hero__progress--next">
         <span className="font-weight-regular">{remainingTime} </span>
         <span className="font-weight-light">{measure}</span>

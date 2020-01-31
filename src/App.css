@@ -9,7 +9,7 @@ body {
     min-width: fit-content;
 }
 
-button.border-0.rounded-0.btn.btn-secondary:hover svg {
+.btn:hover svg {
     transition: all .2s ease-in-out;
     transform: scale(1.2);
 }
@@ -56,19 +56,35 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
     height: 80px;
 }
 
-.hero__vote--up {
+.vote--up {
     background: rgba(44, 186, 179, 0.8);
 }
 
-.hero__vote--down {
+.vote--down {
     background: rgba(254, 180, 50, 0.8);
 }
 
-.hero__vote--up:hover {
+.vote--up, .vote--down  {
+    border: 2px solid transparent!important;
+}
+
+.vote--up:focus, .vote--down:focus  {
+    border: 2px solid #fff!important;
+    box-shadow: none;
+}
+.vote--up:focus, .vote--up:active  {
+    background-color: rgba(44, 186, 179, 0.8)!important;
+}
+
+.vote--down:focus, .vote--down:active {
+    background-color: rgba(254, 180, 50, 0.8)!important;
+}
+
+.vote--up:hover {
     background-color: rgba(44, 186, 179);
 }
 
-.hero__vote--down:hover {
+.vote--down:hover {
     background-color: rgba(254, 180, 50);
 }
 
@@ -116,5 +132,5 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
 }
 
 .submitname {
-    background: url('./assets/summit-name.jpg') center center / cover no-repeat;
+    background: url('./assets/img/summit-name.jpg') center center / cover no-repeat;
 }
