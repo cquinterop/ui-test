@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from "reactstrap";
-import axios from 'axios';
+import { getCelebrities } from '../api/services';
 import Box from '../components/ui/Box';
-
-const getCelebrities = () => axios('http://localhost:3001/data')
 
 function Votes() {
   const [data, setData] = useState([])
+
   useEffect(() => {
-    const test = async () => {
+    const setCelebrities = async () => {
       try {
         const { data: celebrities } = await getCelebrities()
         setData(celebrities)
@@ -16,19 +15,22 @@ function Votes() {
         console.error(error)
       }
     }
-    test()
+    setCelebrities()
   }, [])
+
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h2>Votes</h2>
-        </Col>
-      </Row>
-      <Row>
-        {data.map(item => <Box {...item} key={item.id} />)}
-      </Row>
-    </Container>
+    <div className="my-5">
+      <Container>
+        <Row>
+          <Col>
+            <h2>Votes</h2>
+          </Col>
+        </Row>
+        <Row>
+          {data.map(item => <Box {...item} key={item.id} />)}
+        </Row>
+      </Container>
+    </div>
   );
 };
 

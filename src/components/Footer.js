@@ -27,7 +27,7 @@ function Footer() {
                 </NavItem>
                 <NavItem>
                   <NavLink className="font-weight-light text-secondary size-1" href="#">
-                  <small>Terms and Conditions</small>
+                  <small>Contact Us</small>
                   </NavLink>
                 </NavItem>
               </Nav>

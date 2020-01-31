@@ -37,10 +37,10 @@ function MainRuling() {
             </CardBody>
             <CardFooter className="border-0 p-0">
               <ButtonGroup className="col-12 p-0 hero__vote">
-                <Button className="border-0 rounded-0 hero__vote vote--up size-2" aria-label="Thumb up">
+                <Button className="border-0 rounded-0 hero__vote voteup--transparent size-2" aria-label="Thumb up">
                   <FontAwesomeIcon icon={faThumbsUp} />
                 </Button>
-                <Button className="border-0 rounded-0 hero__vote vote--down size-2 flip-horizontal" aria-label="Thumb down">
+                <Button className="border-0 rounded-0 hero__vote votedown--transparent size-2 flip-horizontal" aria-label="Thumb down">
                   <FontAwesomeIcon icon={faThumbsDown} />
                 </Button>
               </ButtonGroup>

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
+/***************** TO BE REFACTORED ***************** /
+
+/* General*/
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
@@ -9,24 +12,24 @@ body {
     min-width: fit-content;
 }
 
-.btn:hover svg {
-    transition: all .2s ease-in-out;
-    transform: scale(1.2);
+.submitname {
+    background: url('./assets/img/summit-name.jpg') center center / cover no-repeat;
 }
 
-.navbar--gradient {
-    background: linear-gradient(to bottom, rgba(59,59,59,1) -50%, rgba(255,255,255,0) 100%);
-    height: 100px;
+.votingbox {
+    min-height: 550px;
 }
 
-.navbar-collapse.show{
-    background: rgba(10, 10, 10, 0.43);
-    backdrop-filter: blur(40px);
-    z-index: 1;
+.flip-horizontal {
+    transform: rotateY(180deg);
 }
 
-.navbar-collapse.show .nav-item:hover {
-    background: rgba(10, 10, 10, 0.8);
+.underline {
+    text-decoration: underline;
+}
+
+.dotted {
+    border-top: 1px dotted grey;
 }
 
 .size-1 {
@@ -46,6 +49,30 @@ body {
     backdrop-filter: blur(20px);
 }
 
+.btn:hover svg {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* Header */
+
+.navbar--gradient {
+    background: linear-gradient(to bottom, rgba(59,59,59,1) -50%, rgba(255,255,255,0) 100%);
+    height: 100px;
+}
+
+.navbar-collapse.show{
+    background: rgba(10, 10, 10, 0.43);
+    backdrop-filter: blur(40px);
+    z-index: 1;
+}
+
+.navbar-collapse.show .nav-item:hover {
+    background: rgba(10, 10, 10, 0.8);
+}
+
+/* Hero */
+
 .hero {
     background: center top / cover no-repeat;
     min-height: 850px;
@@ -56,39 +83,7 @@ body {
     height: 80px;
 }
 
-.vote--up {
-    background: rgba(44, 186, 179, 0.8);
-}
-
-.vote--down {
-    background: rgba(254, 180, 50, 0.8);
-}
-
-.vote--up, .vote--down  {
-    border: 2px solid transparent!important;
-}
-
-.vote--up:focus, .vote--down:focus  {
-    border: 2px solid #fff!important;
-    box-shadow: none;
-}
-.vote--up:focus, .vote--up:active  {
-    background-color: rgba(44, 186, 179, 0.8)!important;
-}
-
-.vote--down:focus, .vote--down:active {
-    background-color: rgba(254, 180, 50, 0.8)!important;
-}
-
-.vote--up:hover {
-    background-color: rgba(44, 186, 179);
-}
-
-.vote--down:hover {
-    background-color: rgba(254, 180, 50);
-}
-
-.hero__progress {
+.progress {
     height: 50px;
 }
 
@@ -113,24 +108,44 @@ body {
     background: rgba(235, 235, 235, 0.7);
 }
 
-.flip-horizontal {
-    transform: rotateY(180deg);
+/* Voting */
+
+.voteup--transparent {
+    background: rgba(44, 186, 179, 0.8);
 }
 
-.underline {
-    text-decoration: underline;
+.votedown--transparent {
+    background: rgba(254, 180, 50, 0.8);
 }
+
+.voteup--transparent, .votedown--transparent  {
+    border: 2px solid transparent!important;
+}
+
+.voteup--transparent:focus, .votedown--transparent:focus  {
+    border: 2px solid #fff!important;
+    box-shadow: none;
+}
+.voteup--transparent:focus, .voteup--transparent:active  {
+    background-color: rgba(44, 186, 179, 0.8)!important;
+}
+
+.votedown--transparent:focus, .votedown--transparent:active {
+    background-color: rgba(254, 180, 50, 0.8)!important;
+}
+
+.btn.voteup--transparent:hover {
+    background-color: rgba(44, 186, 179);
+}
+
+.btn.votedown--transparent:hover {
+    background-color: rgba(254, 180, 50);
+}
+
+/* Message */
 
 .speakout__close {
     position: absolute;
     top: 15%;
     right: 30px;
-}
-
-.dotted {
-    border-top: 1px dotted grey;
-}
-
-.submitname {
-    background: url('./assets/img/summit-name.jpg') center center / cover no-repeat;
 }

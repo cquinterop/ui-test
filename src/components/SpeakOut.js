@@ -10,7 +10,7 @@ function SpeakOut() {
       <Container>
         <Jumbotron className="position-relative rounded-0 py-4">
           <Row>
-            <Col className="mb-sm-3 mb-lg-0 text-sm-center" lg="3">
+            <Col className="mb-3 mb-lg-0 text-center" lg="3">
               <div className="font-weight-light">
                 Speak out. Be heard.
             </div>

@@ -18,7 +18,7 @@ function Closing() {
   const measure = getMeasure(remainingDays);
 
   return (
-    <Progress multi className="bg-transparent rounded-0 hero__progress">
+    <Progress multi className="bg-transparent rounded-0 progress">
       <Progress bar value={currentDay} max={limitDay} className="text-right pr-3 pl-4 fit-content hero__progress--past position-relative">
         CLOSING IN
       </Progress>
