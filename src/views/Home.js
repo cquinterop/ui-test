@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import SpeakOut from '../components/SpeakOut';
+import SubmitName from '../components/SubmitName';
 import Footer from '../components/Footer';
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <div>
          <Hero />
          <SpeakOut />
+         <SubmitName />
          <Footer />
     </div>
   );

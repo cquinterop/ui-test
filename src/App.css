@@ -114,3 +114,7 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
 .dotted {
     border-top: 1px dotted grey;
 }
+
+.submitname {
+    background: url('./assets/summit-name.jpg') center center / cover no-repeat;
+}
