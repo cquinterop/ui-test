@@ -11,7 +11,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (

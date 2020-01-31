@@ -88,8 +88,8 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
     width: 0;
     height: 0;
     border-bottom: 5px solid transparent;
-    border-left: 8px solid rgba(62, 62, 62, 0.2);
-    border-right: 0px solid rgba(62, 62, 62, 0.2);
+    border-left: 8px solid rgba(62, 62, 62, 0.3);
+    border-right: 0px solid rgba(62, 62, 62, 0.3);
     border-top: 5px solid transparent;
 }
 
@@ -103,4 +103,10 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
 
 .underline {
     text-decoration: underline;
+}
+
+.speakout__close {
+    position: absolute;
+    top: 15%;
+    right: 30px;
 }
