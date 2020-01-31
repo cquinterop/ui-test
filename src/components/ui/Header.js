@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Navbar,
-  Container,
-  NavbarToggler,
-  NavbarBrand,
-  UncontrolledCollapse,
-  Nav,
-  NavItem,
-  NavLink,
+  Navbar, Nav, NavItem, NavLink,
+  NavbarToggler, NavbarBrand,
+  Container, UncontrolledCollapse,
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -52,6 +47,6 @@ function Header() {
       </Navbar>
     </header>
   );
-}
+};
 
 export default Header;

@@ -29,7 +29,7 @@ function MainRuling() {
               </CardText>
               <CardLink className="size-1 text-white d-block mb-4" href="#">
                 <FontAwesomeIcon icon={faWikipediaW} />
-                <span className="font-weight-light ml-2 underline">More information</span>
+                <small className="font-weight-light ml-1 underline">More information</small>
               </CardLink>
               <CardText className="font-weight-bold">
                 What’s Your Verdict?
@@ -50,6 +50,6 @@ function MainRuling() {
       </Row>
     </Container>
   );
-}
+};
 
 export default MainRuling;

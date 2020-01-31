@@ -49,7 +49,7 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
 .hero {
     background: center top / cover no-repeat;
     min-height: 850px;
-    height: auto;
+    height: 80vh;
 }
 
 .hero__vote {
@@ -109,4 +109,8 @@ button.border-0.rounded-0.btn.btn-secondary:hover svg {
     position: absolute;
     top: 15%;
     right: 30px;
+}
+
+.dotted {
+    border-top: 1px dotted grey;
 }

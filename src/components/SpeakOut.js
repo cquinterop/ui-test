@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Jumbotron, Container, Row, Col, Button } from 'reactstrap';
 
-const SpeakOut = () => {
+function SpeakOut() {
   const [isClosed, setClose] = useState(false);
   const handleCloser = () => setClose(true);
 

@@ -28,6 +28,6 @@ function Closing() {
       </Progress>
     </Progress>
   );
-}
+};
 
 export default Closing;

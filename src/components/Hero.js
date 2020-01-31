@@ -12,6 +12,6 @@ function Hero() {
             <Closing />
         </div>
     );
-}
+};
 
 export default Hero;
