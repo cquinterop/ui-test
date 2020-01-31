@@ -6,6 +6,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Home from './views/Home';
 import HowItWorks from './views/HowItWorks';
 import PastTrials from './views/PastTrials';

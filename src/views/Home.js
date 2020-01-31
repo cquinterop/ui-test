@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/ui/Header';
+import Hero from '../components/Hero';
 
 function Home() {
   return (
     <div>
-         <Header />
+         <Hero />
     </div>
   );
 }

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+
+.fit-content {
+    min-width: fit-content;
+}
+
+button.border-0.rounded-0.btn.btn-secondary:hover svg {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+.navbar--gradient {
+    background: linear-gradient(to bottom, rgba(59,59,59,1) -50%, rgba(255,255,255,0) 100%);
+    height: 100px;
+}
+
+.navbar-collapse.show{
+    background: rgba(10, 10, 10, 0.43);
+    backdrop-filter: blur(40px);
+    z-index: 1;
+}
+
+.navbar-collapse.show .nav-item:hover {
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.size-1 {
+    font-size: 1rem;
+}
+
+.size-2 {
+    font-size: 2rem;
+}
+
+.size-3 {
+    font-size: 3rem;
+}
+
+.dark-blur-background {
+    background: rgba(37, 37, 37, 0.48);
+    backdrop-filter: blur(20px);
+}
+
+.hero {
+    background: center top / cover no-repeat;
+    min-height: 850px;
+    height: auto;
+}
+
+.hero__vote {
+    height: 80px;
+}
+
+.hero__vote--up {
+    background: rgba(44, 186, 179, 0.8);
+}
+
+.hero__vote--down {
+    background: rgba(254, 180, 50, 0.8);
+}
+
+.hero__vote--up:hover {
+    background-color: rgba(44, 186, 179);
+}
+
+.hero__vote--down:hover {
+    background-color: rgba(254, 180, 50);
+}
+
+.hero__progress {
+    height: 50px;
+}
+
+.hero__progress--past {
+    background: rgba(62, 62, 62, 0.2);
+    overflow: unset;
+}
+
+.hero__progress--past::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid rgba(62, 62, 62, 0.2);
+    border-right: 0px solid rgba(62, 62, 62, 0.2);
+    border-top: 5px solid transparent;
+}
+
+.hero__progress--next {
+    background: rgba(235, 235, 235, 0.7);
+}
+
+.flip-horizontal {
+    transform: rotateY(180deg);
+}
+
+.underline {
+    text-decoration: underline;
+}

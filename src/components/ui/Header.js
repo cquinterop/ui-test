@@ -1,41 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   Navbar,
   Container,
   NavbarToggler,
   NavbarBrand,
-  Collapse,
+  UncontrolledCollapse,
   Nav,
   NavItem,
   NavLink,
 } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
   return (
     <header>
-      <Navbar color="navbar-transparent" light expand="md">
+      <Navbar className="navbar--gradient" expand="lg">
         <Container>
-          <NavbarBrand tag={Link} to="/">Rule of thumb.</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink tag={Link} to="/past-trials">Past Trials
-              </NavLink>
+          <NavbarBrand className="size-2 text-white" tag={Link} to="/">
+            Rule of thumb.
+          </NavbarBrand>
+          <NavbarToggler className="text-white border-0" id="navbar_global">
+            <FontAwesomeIcon icon={faBars} />
+          </NavbarToggler>
+          <UncontrolledCollapse navbar toggler="#navbar_global">
+            <Nav className="size-1 ml-auto" navbar>
+              <NavItem className="px-3">
+                <NavLink className="font-weight-light text-white" tag={Link} to="/past-trials">
+                  Past Trials
+                </NavLink>
+              </NavItem >
+              <NavItem className="px-3">
+                <NavLink className="font-weight-light text-white" tag={Link} to="/how-it-works">
+                  How It Works
+                </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/how-it-works">How It Works</NavLink>
+              <NavItem className="px-3">
+                <NavLink className="font-weight-light text-white" tag={Link} to="/log-in">
+                  Log In / Sign Up
+                </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/log-in">Log In / Sign Up</NavLink>
+              <NavItem className="px-3">
+                <NavLink className="text-white" tag={Link} to="/search">
+                  <FontAwesomeIcon icon={faSearch} />
+                </NavLink>
               </NavItem>
             </Nav>
-          </Collapse>
+          </UncontrolledCollapse>
         </Container>
       </Navbar>
     </header>
