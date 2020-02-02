@@ -1,0 +1,18 @@
+@mixin thumb-btn($color, $color-transparent)
+	background: $color
+	background: $color-transparent
+	border: 2px solid transparent!important 
+	&:focus
+		box-shadow: none
+		border: 2px solid #fff!important 
+		background-color: $color!important 
+		background-color: $color-transparent!important
+	&:active
+		background-color: $color!important 
+		background-color: $color-transparent!important
+	&:hover.btn
+		background-color: $color!important 
+
+@mixin dark-blur
+	background: rgba(37, 37, 37, 0.48)
+	backdrop-filter: blur(20px)

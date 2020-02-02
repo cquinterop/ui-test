@@ -13,13 +13,13 @@ function MainRuling() {
       <Row>
         <Col md="6">
           <Card className="text-white bg-transparent rounded-0 my-5 p-0">
-            <CardBody className="p-4 dark-blur-background">
+            <CardBody className="p-4 hero__box--darkblur">
               <CardTitle>
                 <h1>
-                  <small className="d-block font-weight-light size-1">
+                  <small className="d-block font-weight-light font-size-1">
                     What’s your opinion on
                   </small>
-                  <span className="size-3">
+                  <span className="font-size-3">
                     Pope Francis?
                   </span>
                 </h1>
@@ -27,7 +27,7 @@ function MainRuling() {
               <CardText className="font-weight-light">
                 He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
               </CardText>
-              <CardLink className="size-1 text-white d-block mb-4" href="#">
+              <CardLink className="font-size-1 text-white d-block mb-4" href="#">
                 <FontAwesomeIcon icon={faWikipediaW} />
                 <small className="font-weight-light ml-1 underline">More information</small>
               </CardLink>
@@ -37,10 +37,10 @@ function MainRuling() {
             </CardBody>
             <CardFooter className="border-0 p-0">
               <ButtonGroup className="col-12 p-0 hero__vote">
-                <Button className="border-0 rounded-0 hero__vote voteup--transparent size-2" aria-label="Thumb up">
+                <Button className="border-0 rounded-0 hero__vote thumbup--transparent font-size-2" aria-label="Thumb up">
                   <FontAwesomeIcon icon={faThumbsUp} />
                 </Button>
-                <Button className="border-0 rounded-0 hero__vote votedown--transparent size-2 flip-horizontal" aria-label="Thumb down">
+                <Button className="border-0 rounded-0 hero__vote thumbdown--transparent font-size-2 flip-horizontal" aria-label="Thumb down">
                   <FontAwesomeIcon icon={faThumbsDown} />
                 </Button>
               </ButtonGroup>

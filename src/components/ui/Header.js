@@ -13,14 +13,14 @@ function Header() {
     <header>
       <Navbar className="navbar--gradient" expand="lg">
         <Container>
-          <NavbarBrand className="size-2 text-white" tag={Link} to="/">
+          <NavbarBrand className="font-size-2 text-white" tag={Link} to="/">
             Rule of thumb.
           </NavbarBrand>
           <NavbarToggler className="text-white border-0" id="navbar_global">
             <FontAwesomeIcon icon={faBars} />
           </NavbarToggler>
           <UncontrolledCollapse navbar toggler="#navbar_global">
-            <Nav className="size-1 ml-auto" navbar>
+            <Nav className="font-size-1 ml-auto" navbar>
               <NavItem className="px-3">
                 <NavLink className="font-weight-light text-white" tag={Link} to="/past-trials">
                   Past Trials

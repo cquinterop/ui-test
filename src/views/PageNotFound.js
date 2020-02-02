@@ -9,7 +9,7 @@ function PageNotFound() {
       <Row>
         <Col className="mx-auto mt-5" xs="6">
           <Card className="text-center">
-            <CardText className="size-3 font-weigth-bold" >Error 404</CardText>
+            <CardText className="font-size-3 font-weigth-bold" >Error 404</CardText>
             <CardText>page not found</CardText>
             <Button onClick={() => history.goBack()}>
               Go Back

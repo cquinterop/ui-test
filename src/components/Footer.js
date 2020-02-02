@@ -11,22 +11,22 @@ function Footer() {
     return (
       <footer>
         <Container>
-          <hr className="dotted" />
+          <hr className="dotted-border" />
           <Row>
             <Col className="d-flex justify-content-center justify-content-md-start" md="8">
               <Nav>
                 <NavItem>
-                  <NavLink className="font-weight-light text-secondary size-1" href="#">
+                  <NavLink className="font-weight-light text-secondary font-size-1" href="#">
                   <small>Terms and Conditions</small>
                 </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="font-weight-light text-secondary size-1" href="#">
+                  <NavLink className="font-weight-light text-secondary font-size-1" href="#">
                   <small>Privacy Policy</small>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="font-weight-light text-secondary size-1" href="#">
+                  <NavLink className="font-weight-light text-secondary font-size-1" href="#">
                   <small>Contact Us</small>
                   </NavLink>
                 </NavItem>
@@ -34,7 +34,7 @@ function Footer() {
             </Col>
             <Col className="d-flex justify-content-center justify-content-md-end" md="4">
               <Nav>
-                <div className="pt-2 font-weight-light text-secondary size-1" >
+                <div className="pt-2 font-weight-light text-secondary font-size-1" >
                   <small>Follow us</small>
                 </div>
                 <NavItem>

@@ -1,0 +1,27 @@
+.hero 
+	background: center top / cover no-repeat 
+	min-height: 850px 
+	height: 80vh 
+	&__vote 
+	height: 80px
+
+.hero__box--darkblur
+	@include dark-blur
+
+.hero__progress--past 
+	background: $progress_past
+	background: $progress_past-transparent
+	overflow: unset 
+	&::after 
+		content: "" 
+		position: absolute 
+		right: -8px 
+		width: 0 
+		height: 0 
+		border-bottom: 5px solid transparent 
+		border-left: 8px solid darken($progress_past-transparent, 100%)
+		border-top: 5px solid transparent 
+
+.hero__progress--next 
+	background: $progress_next
+	background: $progress_next-transparent

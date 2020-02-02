@@ -1,0 +1,10 @@
+.navbar--gradient 
+	background: linear-gradient(to bottom, rgba(59,59,59,1) -50%, rgba(255,255,255,0) 100%) 
+	height: 100px 
+.navbar-collapse 
+	&.show 
+		@include dark-blur
+		z-index: 1 
+		.nav-item 
+			&:hover 
+				background: #000

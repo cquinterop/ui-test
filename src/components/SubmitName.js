@@ -7,7 +7,7 @@ function SubmitName() {
       <Container>
         <div className="submitname p-3">
           <Row >
-            <Col className="size-2 font-weight-light mb-3 mb-lg-0 text-center text-lg-left" lg="9">
+            <Col className="font-size-2 font-weight-light mb-3 mb-lg-0 text-center text-lg-left" lg="9">
               Is there anyone else you would want us to add?
           </Col>
             <Col className="d-flex justify-content-center" lg="3">
