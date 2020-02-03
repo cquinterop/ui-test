@@ -20,9 +20,8 @@ function Closing() {
       <Progress bar value={currentDay} max={deadline} className="text-right pr-3 pl-4 fit-content hero__progress--past position-relative">
         CLOSING IN
       </Progress>
-      <Progress bar value={remainingDays} max={deadline} className="text-left text-dark pl-3 pr-4 d-block fit-content font-size-2 hero__progress--next">
-        <span className="font-weight-regular">{remainingTime} </span>
-        <span className="font-weight-light">{timeMeasure}</span>
+      <Progress bar value={remainingDays} max={deadline} className="text-left text-dark pl-3 pr-4 fit-content font-size-2 hero__progress--next">
+        <div><span className="font-weight-regular">{remainingTime} </span> <span className="font-weight-light">{timeMeasure}</span></div>
       </Progress>
     </Progress>
   );

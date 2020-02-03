@@ -7,7 +7,7 @@
       "date": "1 month ago",
       "section": "Entertainment",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-      "thumbsUp": 3,
+      "thumbsUp": 0,
       "thumbsDown": 114
     },
     {
@@ -17,8 +17,8 @@
       "date": "1 month ago",
       "section": "Business",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-      "thumbsUp": 16,
-      "thumbsDown": 16
+      "thumbsUp": 9,
+      "thumbsDown": 9
     },
     {
       "id": 3,
