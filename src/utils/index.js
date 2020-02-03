@@ -9,4 +9,4 @@ export const getVotePercentages = (likesAmount, dislikesAmount) => {
     const dislikePercentage = Math.round((dislikesAmount / totalVotes) * 100);
     return { likePercentage, dislikePercentage };
 };
-export const processVote = (condition, source) => condition ? { thumbsUp: source.thumbsUp + 1 } : { thumbsDown: source.thumbsDown + 1 };
+export const processVote = (condition, source, addition = null) => condition ? { thumbsUp: source.thumbsUp + addition } : { thumbsDown: source.thumbsDown + addition };

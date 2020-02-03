@@ -11,6 +11,7 @@ import { patchVote } from '../../api/services';
 
 function Box(props) {
   const { id, name, date, description, picture, section, thumbsUp, thumbsDown } = props;
+
   const [hasLiked, setLike] = useState(null);
   const [hasSubmitted, setSubmission] = useState(false);
   const [percentages, setPercentages] = useState({ thumbsUp: 0, thumbsDown: 0 });
@@ -24,7 +25,7 @@ function Box(props) {
 
   const handleVoteSubmission = async () => {
     try {
-      const vote = processVote(hasLiked, votes);
+      const vote = processVote(hasLiked, votes, 1);
       const { data: responseVotes } = await patchVote(id, vote);
       const responseVote = processVote(hasLiked, responseVotes);
       setVotes(state => ({...state, ...responseVote}));
@@ -99,7 +100,7 @@ Box.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   thumbsUp: PropTypes.number.isRequired,

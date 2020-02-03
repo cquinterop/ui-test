@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { getCelebritiesAction } from '../redux/actions'
+import { selectCelebrities } from '../redux/selectors'
 import { Container, Row, Col } from "reactstrap";
-import { getCelebrities } from '../api/services';
 import Box from '../components/ui/Box';
 
 function Votes() {
-  const [data, setData] = useState([])
+  const dispatch = useDispatch();
+  const celebrities = useSelector(state => selectCelebrities(state)) || [];
 
   useEffect(() => {
-    const setCelebrities = async () => {
-      try {
-        const { data: celebrities } = await getCelebrities()
-        setData(celebrities)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-    setCelebrities()
-  }, [])
+    dispatch(getCelebritiesAction());
+  }, [dispatch])
 
   return (
     <div className="my-5">
@@ -27,7 +22,7 @@ function Votes() {
           </Col>
         </Row>
         <Row>
-          {data.map(item => <Box {...item} key={item.id} />)}
+          {celebrities.map(celebrity => <Box {...celebrity} key={celebrity.id} />)}
         </Row>
       </Container>
     </div>
