@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-import { getCelebrities } from '../api/services';
-import Box from '../components/ui/Box';
+import Boxes from '../components/ui/Boxes';
 
 function Votes() {
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    const setCelebrities = async () => {
-      try {
-        const { data: celebrities } = await getCelebrities()
-        setData(celebrities)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-    setCelebrities()
-  }, [])
-
   return (
     <div className="my-5">
       <Container>
@@ -27,7 +12,7 @@ function Votes() {
           </Col>
         </Row>
         <Row>
-          {data.map(item => <Box {...item} key={item.id} />)}
+          <Boxes />
         </Row>
       </Container>
     </div>

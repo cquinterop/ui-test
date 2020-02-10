@@ -7,8 +7,8 @@
       "date": "1 month ago",
       "section": "Entertainment",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-      "thumbsUp": 0,
-      "thumbsDown": 114
+      "thumbsUp": 7,
+      "thumbsDown": 11
     },
     {
       "id": 2,
@@ -17,8 +17,8 @@
       "date": "1 month ago",
       "section": "Business",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-      "thumbsUp": 9,
-      "thumbsDown": 9
+      "thumbsUp": 28,
+      "thumbsDown": 27
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "section": "Politics",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
       "thumbsUp": 2,
-      "thumbsDown": 50
+      "thumbsDown": 20
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "section": "Entertainment",
       "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
       "thumbsUp": 22,
-      "thumbsDown": 2
+      "thumbsDown": 30
     }
   ]
 }
